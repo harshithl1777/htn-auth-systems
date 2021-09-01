@@ -1,0 +1,12 @@
+{
+  "name": "htn-auth-systems",
+  "version": "1.0.0",
+  "description": "The Hack the North auth systems workshop starter project",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "cd server && npm start"
+  },
+  "author": "",
+  "license": "MIT"
+}
