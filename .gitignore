@@ -2,7 +2,6 @@
 
 # dependencies
 **/node_modules
-/client/src/.env
 /.pnp
 .pnp.js
 
@@ -24,6 +23,4 @@ yarn-debug.log*
 yarn-error.log*
 
 # config folder
-
-#test files
-/server/test
+**/config
