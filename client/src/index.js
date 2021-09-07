@@ -1,5 +1,2 @@
-import axios from 'axios';
-
-axios.get('/api/test').then(({ data }) => console.log(data));
-
-alert('Testing');
+import dom from './dom/dom';
+import listeners from './dom/listeners';

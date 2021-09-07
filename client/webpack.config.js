@@ -4,7 +4,8 @@ module.exports = {
 	mode: 'none',
 	entry: './src/index.js',
 	output: {
-		path: __dirname + '/dist',
+		path: path.join(__dirname, 'dist'),
+		publicPath: '/',
 		filename: 'bundle.js',
 	},
 	devServer: {
@@ -13,7 +14,6 @@ module.exports = {
 		proxy: {
 			'/api': {
 				target: 'http://localhost:5000',
-				pathRewrite: { '^/api': '' },
 				secure: false,
 				changeOrigin: true,
 			},
