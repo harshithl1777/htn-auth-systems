@@ -1,17 +1,22 @@
 import { renderInterior, renderResponse } from './dom';
+import getCardsData from '../api/cards';
 
 // Login Event Listener
 const loginForm = document.querySelector('#login-form');
-loginForm.addEventListener('submit', (e) => {
+loginForm.addEventListener('submit', async (e) => {
 	e.preventDefault();
 	renderInterior('hackthesouth');
 });
 
 const requestForm = document.querySelector('#request-form');
-let count = 0;
-requestForm.addEventListener('submit', (e) => {
+requestForm.addEventListener('submit', async (e) => {
 	e.preventDefault();
-	if (count % 2 === 0) renderResponse(false, 'Bad request', '404');
-	else renderResponse(true, 'Good request', '200');
-	count++;
+	const userID = document.querySelector('#userid').value;
+	const { data, status } = await getCardsData(userID);
+	renderResponse(data.success, data.payload, status);
+});
+
+const logoutButton = document.querySelector('#logout');
+logoutButton.addEventListener('click', async () => {
+	window.location.href = 'http://localhost:3000';
 });

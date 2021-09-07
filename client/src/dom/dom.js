@@ -9,26 +9,36 @@ export const renderInterior = (username) => {
 	}, 500);
 };
 
-export const renderResponse = (success, message, code) => {
-	if (
-		success &&
-		document.querySelector('#response-tag').classList.contains('red')
-	) {
-		document
-			.querySelector('#response-container')
-			.classList.replace('light-red', 'light-green');
+export const renderResponse = (success, payload, code) => {
+    
+    // Update colors based on success level
+	const containsRedClass = document.querySelector('#response-tag').classList.contains('red');
+	const containsGreenClass = document.querySelector('#response-tag').classList.contains('green');
+
+	if (success && containsRedClass) {
+		document.querySelector('#response-container').classList.replace('light-red', 'light-green');
 		document.querySelector('#response-tag').classList.replace('red', 'green');
-	} else if (
-		!success &&
-		document.querySelector('#response-tag').classList.contains('green')
-	) {
-		document
-			.querySelector('#response-container')
-			.classList.replace('light-green', 'light-red');
+	} else if (!success && containsGreenClass) {
+		document.querySelector('#response-container').classList.replace('light-green', 'light-red');
 		document.querySelector('#response-tag').classList.replace('green', 'red');
 	}
 
-	document.querySelector('#response-text').innerHTML = message;
+    document.querySelector('#response-text').innerHTML = ''; // Delete previous response text
+
+    // If data is returned, loop through each card and list it
+    if (typeof payload === 'object') {
+        payload.forEach(card => {
+            for (const key in card) {
+                const line = `${key.toUpperCase()}: ${card[key]} <br />`;
+                document.querySelector('#response-text').insertAdjacentHTML('beforeend', line);
+            }
+        });
+    // If data is not returned, insert the error message
+    } else {
+        document.querySelector('#response-text').innerHTML = payload;
+    }
+
+    // Update status code and display response div
 	document.querySelector('#response-tag').innerHTML = code;
 	document.querySelector('#response').style.display = 'block';
 };
