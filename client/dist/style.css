@@ -1,0 +1,281 @@
+* {
+	margin: 0 auto;
+}
+
+body {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(180deg, #089cf0 0%, #005bc6 100%);
+	height: 100vh;
+	width: 100vw;
+}
+
+input {
+	border: 1px solid #d4d9eb;
+	box-sizing: border-box;
+	border-radius: 6px;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	letter-spacing: 0.03em;
+	color: #1968dd;
+	padding-left: 17px;
+	width: 369px;
+	height: 44px;
+}
+
+input::placeholder {
+	color: #d4d9eb;
+	margin-left: 17px;
+	text-align: left;
+}
+
+input:focus {
+	border: 1px solid #1968dd;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 0px 4px rgba(8, 129, 240, 0.15);
+	outline: none;
+}
+
+input:not(:placeholder-shown) {
+	border: 1px solid #1968dd;
+}
+
+.submit {
+	width: 369px;
+	height: 48px;
+	background: #0881f0;
+	box-shadow: 0px 0.5px 2px rgba(0, 79, 198, 0.25);
+	border-radius: 6px;
+	border: none;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 17px;
+	line-height: 17px;
+	/* identical to box height, or 106% */
+
+	text-align: center;
+
+	color: #ffffff;
+}
+
+.submit:hover {
+	cursor: pointer;
+	filter: brightness(0.95);
+}
+
+.login {
+	background: white;
+	width: 435px;
+	height: 364px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+}
+
+.header {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 28px;
+	line-height: 31px;
+	color: #0881f0;
+}
+
+.login-header {
+	margin-top: 42px;
+}
+
+.login-body {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	color: #000a18;
+	width: 364px;
+	height: 34px;
+	margin-top: 12px;
+}
+
+.username {
+	margin-top: 31px;
+}
+
+.password {
+	margin-top: 17px;
+	margin-bottom: 24px;
+}
+
+.loading {
+	display: none;
+}
+
+.spinner {
+	width: 70px;
+	height: 70px;
+}
+
+.interior {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	display: none;
+}
+
+.form-interior {
+	background: white;
+	width: 421px;
+
+	background: #ffffff;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.interior-header {
+	margin-top: 32px;
+}
+
+.subheader {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 17px;
+	line-height: 17px;
+	text-align: center;
+	margin-top: 10px;
+	color: #000a18;
+	width: 369px;
+	text-align: left;
+}
+
+.interior-body {
+	width: 369px;
+	text-align: left;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 17px;
+	text-align: left;
+	letter-spacing: 0.03em;
+	color: #000a18;
+	margin-top: 7px;
+}
+
+.tag {
+	width: 41px;
+	height: 21px;
+	border-radius: 4px;
+	text-align: center;
+	border: none;
+	color: white;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 17px;
+}
+
+.code-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 369px;
+	height: 37px;
+	border-radius: 6px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+.light-green {
+	background: rgba(0, 198, 150, 0.15);
+}
+
+.light-red {
+	background: rgba(244, 64, 64, 0.15);
+}
+
+.green {
+	background: #00c696;
+}
+
+.red {
+	background: #f44040;
+}
+
+.request-text {
+	font-family: Roboto Mono;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 17px;
+	letter-spacing: 0.05em;
+	color: #000a18;
+	margin-right: 16px;
+}
+
+.response-container {
+	position: relative;
+	min-height: 37px;
+	width: 369px;
+	height: fit-content;
+}
+
+.tag-response {
+	position: absolute;
+	top: 8px;
+	right: 7px;
+}
+
+.response-text {
+	font-family: Roboto Mono;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	letter-spacing: 0.05em;
+	margin-left: 14px;
+	color: #000a18;
+	max-width: 280px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.userid {
+	margin-top: 18px;
+}
+
+.interior-submit {
+	margin-top: 18px;
+	height: 44px;
+	margin-bottom: 30px;
+}
+
+.logout {
+	background: none;
+	border: none;
+	position: absolute;
+	top: 38px;
+	right: 34px;
+}
+
+.logout:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}

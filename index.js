@@ -13,7 +13,6 @@ app.use('/api/cards', cardsRouter);
 
 app.get('/api/health', (req, res) => res.sendStatus(200));
 
-if (process.env.NODE_ENV === 'production')
-	app.use(express.static(path.join(__dirname, 'client', 'dist')));
+app.use(express.static(path.join(__dirname, 'client', 'dist')));
 
 app.listen(port, () => console.info(`Listening on port ${port}`));

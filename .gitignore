@@ -25,5 +25,6 @@ yarn-error.log*
 # config folder
 **/config
 
-**/dist
+**/bundle.js
+
 **/.cache

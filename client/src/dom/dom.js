@@ -1,9 +1,8 @@
-export const renderInterior = (username) => {
+export const renderInterior = () => {
 	document.querySelector('#login-form').style.display = 'none';
 	document.querySelector('#loading').style.display = 'flex';
 
 	setTimeout(() => {
-		document.querySelector('#username').innerHTML = username;
 		document.querySelector('#loading').style.display = 'none';
 		document.querySelector('#interior').style.display = 'flex';
 	}, 500);
