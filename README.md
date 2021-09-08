@@ -1,15 +1,16 @@
 # Intro to Authentication Systems Workshop (HTN)
 September 14, 2021 / 9:00 PM - 10:30 PM ET
 
-This ReadMe file contains some of the resources for this workshop and the setup instructions for this project.
+This ReadMe file contains some of the resources for this workshop and the setup instructions for this project. This workshop's hackpack can also be found [here](https://hackthenorth.com/hackpacks/IntroToAuthenticationSystems.pdf).
 
-## Resources
-- [Hack the North Schedule](https://my.hackthenorth.com/schedule)
-- [This workshop's Hackpack](https://hackthenorth.com/hackpacks/IntroToAuthenticationSystems.pdf)
+## General Resources
 - [Hasura's Introduction to JWT (with GraphQL)](https://hasura.io/blog/best-practices-of-using-jwt-with-graphql/)
 - [Hashing and Salting (A good next step after JWT)](https://crackstation.net/hashing-security.htm)
+- [JWT with React (Includes CSRF tokens)](https://medium.com/@ryanchenkie_40935/react-authentication-how-to-store-jwt-in-a-cookie-346519310e81)
+- [Why passwords are Becoming Ineffective](https://www.entrepreneur.com/article/309054)
+- [How Big Cloud Providers can be Hacked](https://www.washingtonpost.com/technology/2020/03/02/cloud-hack-problems/)
 
-## Prep Resources for the Workshop
+## Prep Resources
 - [Intro to Node.js](https://www.youtube.com/watch?v=fBNz5xF-Kx4)
 - [Intro to Express.js](https://www.youtube.com/watch?v=SccSCuHhOw0)
 
