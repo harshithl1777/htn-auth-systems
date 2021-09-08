@@ -15,18 +15,6 @@ What do some of the largest companies and emerging startups do to build extremel
 3. Proficiency with Express.js
 4. General knowledge of the web (HTTP, servers, etc)
 
-## Required Tools
-- Node.js (12.x at least)
-- Node Package Manager (npm)
-- Some sort of IDE (Visual Studio Code is ***highly recommended***)
-
-## Setup Instructions
-1. Clone this repository by running `git clone https://github.com/harshithl1777/htn-auth-systems` in your command line
-2. Run `cd htn-auth-systems` and then install the required dependencies with `npm install`
-3. Run the client with `npm run client` and visit `http://localhost:3000`
-4. Run the server with `npm run server` and visit `http://localhost:5000` 
-5. Alternatively you could run both concurrently with `npm start`
-
 ## Resources
 - [Hack the North Schedule](https://my.hackthenorth.com/schedule)
 - [Hasura's Introduction to JWT (with GraphQL)](https://hasura.io/blog/best-practices-of-using-jwt-with-graphql/)
