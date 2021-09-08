@@ -1,4 +1,4 @@
-# Intro to Authentication Systems (Hack the North Workshop)
+# Intro to Authentication Systems Workshop (HTN)
 September 14, 2021 / 9:00 PM - 10:30 PM ET
 
 What do some of the largest companies and emerging startups do to build extremely secure platforms for their users? How do they structure their authentication systems to provide a seamless experience for users and a strong barrier against hackers? These are the topics we'll be covering in this workshop - minimal experience required!
