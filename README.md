@@ -25,4 +25,4 @@ What do some of the largest companies and emerging startups do to build extremel
 - [Intro to Express.js](https://www.youtube.com/watch?v=SccSCuHhOw0)
 
 ## Setup Instructions
-You can find all the setup instructions for this workshop in the **SETUP.md** file or at [this link](https://github.com/harshithl1777/htn-auth-systems/master/SETUP.md).
+You can find all the setup instructions for this workshop in the **SETUP.md** file or at [this link]https://github.com/harshithl1777/htn-auth-systems/blob/master/SETUP.md#setup-instructions).
