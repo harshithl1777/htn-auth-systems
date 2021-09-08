@@ -23,3 +23,5 @@ What do some of the largest companies and emerging startups do to build extremel
 ## Prep Resources for the Workshop
 - [Intro to Node.js](https://www.youtube.com/watch?v=fBNz5xF-Kx4)
 - [Intro to Express.js](https://www.youtube.com/watch?v=SccSCuHhOw0)
+
+## [Setup Instructions](https://github.com/harshithl1777/htn-auth-systems/master/SETUP.md)
