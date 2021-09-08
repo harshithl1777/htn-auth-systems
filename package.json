@@ -4,10 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "client": "cd client && npm start",
-    "build": "cd client && npm run build",
     "server": "nodemon index.js",
-    "start": "concurrently \"cd client && npm start\" \"nodemon index.js\""
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
