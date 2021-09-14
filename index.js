@@ -3,14 +3,15 @@ const cors = require('cors');
 const cookieParser = require('cookie-parser');
 require('dotenv').config({ path: './server/config/.env' });
 
-const cardsRouter = require('./server/routers/cards');
+// TODO: Import required routers
 
 const app = express();
 
 if (process.env.NODE_ENV !== 'production') app.use(cors());
 app.use(express.json());
 app.use(cookieParser());
-app.use('/api/cards', cardsRouter);
+
+// TODO: Use routers and middleware
 
 app.get('/health', (req, res) => res.sendStatus(200));
 

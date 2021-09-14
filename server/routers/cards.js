@@ -1,11 +1,3 @@
-const express = require('express');
-const router = express.Router();
+// TODO: Import database, express, jwt
 
-const { cards } = require('../database/database');
-
-router.get('/:userID', (req, res) => {
-	const cardsByUser = cards.filter((card) => card.userID === req.params.userID);
-	return res.status(200).send({ payload: cardsByUser, success: true });
-});
-
-module.exports = router;
+// TODO: Write GET cards route
