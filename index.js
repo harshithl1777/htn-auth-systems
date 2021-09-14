@@ -4,6 +4,7 @@ const cookieParser = require('cookie-parser');
 require('dotenv').config({ path: './server/config/.env' });
 
 // TODO: Import required routers
+const cardsRouter = require('./server/routers/cards');
 
 const app = express();
 
@@ -12,6 +13,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 // TODO: Use routers and middleware
+app.use('/api/cards', cardsRouter);
 
 app.get('/health', (req, res) => res.sendStatus(200));
 
