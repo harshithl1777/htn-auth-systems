@@ -1,1 +1,17 @@
+POST http://localhost:5000/api/auth/session
+Content-Type: application/json
+
+{
+    "username": "hackthesouth",
+    "password": "789hts123"
+}
+
+###
 GET http://localhost:5000/api/cards/458017
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI0NTgwMTciLCJ1c2VybmFtZSI6ImhhY2t0aGVzb3V0aCIsImlhdCI6MTYzMTY3MTg4OCwiZXhwIjoxNjMxNjcxODk4fQ.JhGUOw5XSv7SO2zJPwAAkozQVx5Gy6OCRyw_lJiH3Ok
+
+###
+PUT http://localhost:5000/api/auth/session
+
+###
+DELETE http://localhost:5000/api/auth/session
